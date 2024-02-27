@@ -17,7 +17,15 @@ public class Main {
         String user = "Dann";
         String fullname = user + " Anthony" + " J." + " Astillero";
         char option = 'b';
-        String choice  = STR."\{user} has chosen option \{option} and my full name is: \{fullname}";
+        String choice  = STR."\{user} has chosen option \{option} and my full name is: \{fullname} and my salary is: \{String.format("$%,.2f", 1234.0)}";
         System.out.println(choice);
+        System.out.printf("Today's weather is %s, with a temperature of %s degrees %s%n",
+                1, 2, 3);
+
+        String gg = "1";
+        String zz = new String("1");
+        String yy = zz.intern();
+
+        System.out.println(gg == yy);
     }
 }
