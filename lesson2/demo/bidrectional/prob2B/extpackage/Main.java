@@ -8,6 +8,6 @@ public class Main {
         Order order = OrderFactory.createOrder(1, "GG1");
         order.addOrderLine("GG2");
 
-        System.out.println(order.getOrderLine("GG1").getOrder().getOrderNum());
+        System.out.println(order.getOrderLineList());
     }
 }

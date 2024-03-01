@@ -13,8 +13,6 @@ public class GradeReport {
         reportNum = newReportNum;
     }
 
-    GradeReport() {}
-
     public Integer getReportNum() {
         return reportNum;
     }

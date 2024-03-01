@@ -6,10 +6,12 @@ import java.util.List;
 public class Order {
     private Integer orderNum;
 
-    private List<OrderLine> orderLineList = new ArrayList<>();
+    private List<OrderLine> orderLineList;
 
-    Order(Integer orderNum) {
+    Order(Integer orderNum, String orderLineName) {
         this.orderNum = orderNum;
+        this.orderLineList = new ArrayList<>();
+        addOrderLine(orderLineName);
     }
 
     public Integer getOrderNum() {
