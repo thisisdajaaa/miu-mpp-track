@@ -1,5 +1,6 @@
 package quiz1;
 
+import quiz1.models.Address;
 import quiz1.models.Product;
 import quiz1.models.Supplier;
 import quiz1.models.SupplierFactory;

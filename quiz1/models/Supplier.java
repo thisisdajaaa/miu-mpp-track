@@ -1,10 +1,14 @@
 package quiz1.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Supplier {
     private String supplierNumber;
     private String supplierName;
     private String contactPhoneNumber;
     private Address address;
+    private List<Product> products;
 
     Supplier(String supplierNumber, String supplierName, String contactPhoneNumber, String street, String city, String state, String zipCode) {
         this.supplierNumber = supplierNumber;

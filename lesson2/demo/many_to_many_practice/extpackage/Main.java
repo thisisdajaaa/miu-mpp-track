@@ -11,17 +11,19 @@ public class Main {
         Student student2 = StudentCourseFactory.createStudent("Das2");
         Course course1 = StudentCourseFactory.createCourse("Course1");
         Course course2 = StudentCourseFactory.createCourse("Course2");
+        Course course3 = StudentCourseFactory.createCourse("Course3");
 
-        StudentCourseFactory.bindStudentToCourse(student1, course1);
-        StudentCourseFactory.bindStudentToCourse(student1, course2);
-        StudentCourseFactory.bindStudentToCourse(student2, course1);
+        StudentCourseFactory.bindStudentToCourse(student1, course1); // courseGrade == null
+        StudentCourseFactory.bindStudentToCourse(student1, course2); // courseGrade == null
+        StudentCourseFactory.bindStudentToCourse(student2, course1); // courseGrade == null
 
         StudentCourseFactory.addCourseGrade(student1, course1, 1);
         StudentCourseFactory.addCourseGrade(student1, course2, 2);
         StudentCourseFactory.addCourseGrade(student2, course1, 1);
         StudentCourseFactory.addCourseGrade(student2, course2, 2);
+        StudentCourseFactory.addCourseGrade(student2, course3, 99);
 
-        System.out.println(student2.getCourseGrades());
+        // System.out.println(student2.getCourseGrades());
 
         for (CourseGrade courseGrade: student2.getCourseGrades()) {
             System.out.println(courseGrade.getGrade());
