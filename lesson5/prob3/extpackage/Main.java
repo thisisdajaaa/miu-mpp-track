@@ -1,19 +1,23 @@
 package lesson5.prob3.extpackage;
 
+import lesson5.prob3.CustOrderFactory;
+import lesson5.prob3.Customer;
+import lesson5.prob3.Order;
+
 import java.time.LocalDate;
 
 public class Main {
 	public static void main(String[] args) {
-//		Customer cust = new Customer("Bob");
-//		Order order = Order.newOrder(cust, LocalDate.now());
-//		order.addItem("Shirt");
-//		order.addItem("Laptop");
-//
-//		order = Order.newOrder(cust, LocalDate.now());
-//		order.addItem("Pants");
-//		order.addItem("Knife set");
-//
-//		System.out.println(cust.getOrders());
+		Customer cust = CustOrderFactory.createCustomer("Bob");
+		Order order = CustOrderFactory.addOrder(cust, LocalDate.now());
+		order.addItem("Shirt");
+		order.addItem("Laptop");
+
+		order = CustOrderFactory.addOrder(cust, LocalDate.now());
+		order.addItem("Pants");
+		order.addItem("Knife set");
+
+		System.out.println(cust.getOrders());
 	}
 }
 
