@@ -54,13 +54,49 @@ public class SRMAppMain {
         SupplierFactory.addProduct(2927458265L, "Apple", LocalDate.of(2022, 12, 9), 18, 1.09, supplier1);
         SupplierFactory.addProduct(8761230987L, "Pear", LocalDate.of(2023, 2, 19), 256, 0.50, supplier1);
 
-        for (Product product: SupplierFactory.getProducts()) {
-            System.out.printf("{ ProductId: %s, Name : %s, DateSupplied: %s, QuantityInStock: %d, UnitPrice: $%,.2f }%n",
-                    product.getProductId(),
-                    product.getProductName(),
-                    product.getDateSupplied(),
-                    product.getQuantityInStock(),
-                    product.getUnitPrice());
+//        for (Product product: SupplierFactory.getProducts()) {
+//            System.out.printf("{ ProductId: %s, Name : %s, DateSupplied: %s, QuantityInStock: %d, UnitPrice: $%,.2f }%n",
+//                    product.getProductId(),
+//                    product.getProductName(),
+//                    product.getDateSupplied(),
+//                    product.getQuantityInStock(),
+//                    product.getUnitPrice());
+//        }
+
+        Person person = new Person("Alice", 30);
+        System.out.println(person.isAdult()); // true
+        Person minor = Person.ofMinor("Alice", -5);
+        System.out.println(minor.age()); // 0
+        System.out.println(Person.SPECIES); // Human
+        System.out.println(person.compareTo(minor));
+    }
+
+    public record Person(String name, int age) implements Comparable<Person> {
+
+        // Compact constructor for validation
+        public Person {
+            if (age < 0) {
+                throw new IllegalArgumentException("Age cannot be negative");
+            }
+        }
+
+        // Instance method
+        public boolean isAdult() {
+            return age >= 18;
+        }
+
+        // Static method
+        public static Person ofMinor(String name, int age) {
+            return new Person(name, Math.max(age, 0));
+        }
+
+        // Static field
+        public static final String SPECIES = "Human";
+
+        // Implementing compareTo from Comparable interface
+        @Override
+        public int compareTo(Person other) {
+            return this.name.compareTo(other.name);
         }
     }
 }
