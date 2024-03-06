@@ -33,9 +33,8 @@ public class Main {
 			for (Course course: student.getPlanOfStudy().getCourseList()) {
 				if (coursesFound.contains(course)) continue;
 
-				if (course.getPrimaryProfessor().equalsIgnoreCase("Valentine")) {
-					coursesFound.add(course);
-				}
+				if (course.getPrimaryProfessor().equalsIgnoreCase("Valentine")) coursesFound.add(course);
+
 			}
 		}
 
