@@ -1,4 +1,4 @@
-package midterm_practice.crmapp.models;
+package midterm_practice.midterm_practice_1.crmapp.models;
 
 import java.time.LocalDate;
 

@@ -1,9 +1,9 @@
-package midterm_exam;
+package midterm_exam.prob2;
 
-import midterm_exam.constants.ItemType;
-import midterm_exam.models.Book;
-import midterm_exam.models.CD;
-import midterm_exam.models.ModelFactory;
+import midterm_exam.prob2.constants.ItemType;
+import midterm_exam.prob2.models.Book;
+import midterm_exam.prob2.models.CD;
+import midterm_exam.prob2.models.ModelFactory;
 
 public class Main {
     public static void main(String[] args) {

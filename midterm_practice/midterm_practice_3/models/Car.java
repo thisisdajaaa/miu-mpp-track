@@ -1,7 +1,7 @@
-package midterm_practice_3.models;
+package midterm_practice.midterm_practice_3.models;
 
-import midterm_practice_3.constants.CarPosition;
-import midterm_practice_3.constants.VehicleStatus;
+import midterm_practice.midterm_practice_3.constants.CarPosition;
+import midterm_practice.midterm_practice_3.constants.VehicleStatus;
 
 public class Car extends Vehicle {
     private CarPosition position;

@@ -1,6 +1,6 @@
-package midterm_practice_4;
+package midterm_practice.midterm_practice_4;
 
-import midterm_practice_4.models.*;
+import midterm_practice.midterm_practice_4.models.*;
 
 import java.time.LocalDate;
 

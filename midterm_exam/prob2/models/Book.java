@@ -1,7 +1,6 @@
-package midterm_exam.models;
+package midterm_exam.prob2.models;
 
-import lesson5.prob3.Item;
-import midterm_exam.constants.ItemType;
+import midterm_exam.prob2.constants.ItemType;
 
 public class Book extends LendingItem{
     private String isbn;

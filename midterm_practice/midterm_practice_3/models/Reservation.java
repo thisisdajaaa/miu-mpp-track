@@ -1,4 +1,4 @@
-package midterm_practice_3.models;
+package midterm_practice.midterm_practice_3.models;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

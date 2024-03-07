@@ -1,4 +1,4 @@
-package midterm_practice.prob2;
+package midterm_practice.midterm_practice_2.prob2;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

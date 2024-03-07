@@ -8,6 +8,26 @@ import quiz1.models.SupplierFactory;
 import java.time.LocalDate;
 
 public class SRMAppMain {
+    public enum GG {
+        GG1("wtf", 1),
+        GG2("wtff", 2);
+
+        private final String name;
+        private final Integer value;
+
+        GG(String name, Integer value) {
+            this.name = name;
+            this.value = value;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public Integer getValue() {
+            return value;
+        }
+    }
     public static void main(String[] args) {
         Supplier supplier1 = SupplierFactory.createSupplier(
                 "SS0013",
@@ -63,12 +83,14 @@ public class SRMAppMain {
 //                    product.getUnitPrice());
 //        }
 
-        Person person = new Person("Alice", 30);
-        System.out.println(person.isAdult()); // true
-        Person minor = Person.ofMinor("Alice", -5);
-        System.out.println(minor.age()); // 0
-        System.out.println(Person.SPECIES); // Human
-        System.out.println(person.compareTo(minor));
+//        Person person = new Person("Alice", 30);
+//        System.out.println(person.isAdult()); // true
+//        Person minor = Person.ofMinor("Alice", -5);
+//        System.out.println(minor.age()); // 0
+//        System.out.println(Person.SPECIES); // Human
+//        System.out.println(person.compareTo(minor));
+
+        System.out.println(GG.GG1.getValue());
     }
 
     public record Person(String name, int age) implements Comparable<Person> {

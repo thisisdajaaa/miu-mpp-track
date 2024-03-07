@@ -1,8 +1,8 @@
-package mideterm_practice_5;
+package midterm_practice.mideterm_practice_5;
 
-import mideterm_practice_5.models.Course;
-import mideterm_practice_5.models.ModelFactory;
-import mideterm_practice_5.models.Student;
+import midterm_practice.mideterm_practice_5.models.Course;
+import midterm_practice.mideterm_practice_5.models.ModelFactory;
+import midterm_practice.mideterm_practice_5.models.Student;
 
 public class Main {
     public static void main(String[] args) {

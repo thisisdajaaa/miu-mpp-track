@@ -1,4 +1,4 @@
-package midterm_exam.constants;
+package midterm_exam.prob2.constants;
 
 public enum ItemType {
     BOOK,

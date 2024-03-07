@@ -1,12 +1,10 @@
-package midterm_practice_3;
+package midterm_practice.midterm_practice_3;
 
-import midterm_practice_3.constants.CarPosition;
-import midterm_practice_3.constants.VehicleStatus;
-import midterm_practice_3.models.*;
+import midterm_practice.midterm_practice_3.constants.CarPosition;
+import midterm_practice.midterm_practice_3.constants.VehicleStatus;
+import midterm_practice.midterm_practice_3.models.*;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {

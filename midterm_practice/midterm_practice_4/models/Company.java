@@ -1,4 +1,4 @@
-package midterm_practice_4.models;
+package midterm_practice.midterm_practice_4.models;
 
 import java.util.ArrayList;
 import java.util.List;

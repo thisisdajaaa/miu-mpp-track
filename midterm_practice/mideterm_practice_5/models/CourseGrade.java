@@ -1,4 +1,4 @@
-package mideterm_practice_5.models;
+package midterm_practice.mideterm_practice_5.models;
 
 public class CourseGrade {
     private int grade;

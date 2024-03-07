@@ -1,9 +1,9 @@
-package midterm_practice.prob2.admin;
+package midterm_practice.midterm_practice_2.prob2.admin;
 
-import midterm_practice.prob2.Course;
-import midterm_practice.prob2.PlanOfStudy;
-import midterm_practice.prob2.Student;
-import midterm_practice.prob2.Transcript;
+import midterm_practice.midterm_practice_2.prob2.Course;
+import midterm_practice.midterm_practice_2.prob2.PlanOfStudy;
+import midterm_practice.midterm_practice_2.prob2.Student;
+import midterm_practice.midterm_practice_2.prob2.Transcript;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

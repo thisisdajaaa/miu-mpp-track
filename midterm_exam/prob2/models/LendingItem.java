@@ -1,6 +1,6 @@
-package midterm_exam.models;
+package midterm_exam.prob2.models;
 
-import midterm_exam.constants.ItemType;
+import midterm_exam.prob2.constants.ItemType;
 
 public abstract class LendingItem {
     private Integer numCopiesInLib;

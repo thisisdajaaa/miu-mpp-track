@@ -1,10 +1,9 @@
-package edu.miu.cs.cs401.midtermp2.app;
+package midterm_exam.prob1;
 
-import edu.miu.cs.cs401.midtermp2.app.models.Employee;
-import edu.miu.cs.cs401.midtermp2.app.models.EmployeeRetirementFactory;
+import midterm_exam.prob1.models.Employee;
+import midterm_exam.prob1.models.EmployeeRetirementFactory;
 
 import java.time.LocalDate;
-import java.time.Period;
 
 public class EmployeesApp {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package midterm_practice_4.models;
+package midterm_practice.midterm_practice_4.models;
 
 public class JobPosition {
     private String title;

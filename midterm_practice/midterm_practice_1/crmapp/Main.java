@@ -1,6 +1,6 @@
-package midterm_practice.crmapp;
+package midterm_practice.midterm_practice_1.crmapp;
 
-import midterm_practice.crmapp.models.Customer;
+import midterm_practice.midterm_practice_1.crmapp.models.Customer;
 
 import java.time.LocalDate;
 import java.time.Period;

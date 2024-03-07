@@ -1,4 +1,4 @@
-package mideterm_practice_5.models;
+package midterm_practice.mideterm_practice_5.models;
 
 import java.util.ArrayList;
 import java.util.Collections;

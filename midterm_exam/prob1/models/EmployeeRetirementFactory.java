@@ -1,4 +1,4 @@
-package edu.miu.cs.cs401.midtermp2.app.models;
+package midterm_exam.prob1.models;
 
 import java.time.LocalDate;
 
