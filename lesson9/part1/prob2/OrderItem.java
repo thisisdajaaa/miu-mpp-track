@@ -1,6 +1,4 @@
-package lesson9.prob2;
-
-import java.time.LocalDate;
+package lesson9.part1.prob2;
 
 public class OrderItem {
 	private String productId;

@@ -1,7 +1,7 @@
-package lesson9.prob2;
+package lesson9.part1.prob2;
 import java.time.LocalDate;
 import java.util.*;
-import java.util.stream.Collectors;
+
 public class Main {
 	List<Order> orders;
 	public static void main(String[] args) {

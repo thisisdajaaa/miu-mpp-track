@@ -1,7 +1,6 @@
-package lesson9.prob4;
+package lesson9.part1.prob4;
 
 import java.math.BigInteger;
-import java.util.List;
 import java.util.stream.Stream;
 
 public class PrimeStream {

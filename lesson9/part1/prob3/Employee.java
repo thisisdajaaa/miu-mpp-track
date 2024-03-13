@@ -1,4 +1,4 @@
-package lesson9.prob3;
+package lesson9.part1.prob3;
 
 import java.util.ArrayList;
 import java.util.Comparator;
