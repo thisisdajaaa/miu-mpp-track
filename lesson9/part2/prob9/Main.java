@@ -4,7 +4,7 @@ import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
-        IntStream stream =  IntStream.iterate(1, Main::findNextSquare);
+        IntStream stream = IntStream.iterate(1, n -> nextPerfectPower(n, 2));
 
         stream.limit(4).forEach(System.out::println);
     }
@@ -21,6 +21,11 @@ public class Main {
         while (!isSquare(nextNumber)) nextNumber++;
 
         return nextNumber;
+    }
+
+    public static int nextPerfectPower(int current, int root) {
+        // Calculate the next perfect power (e.g., square, cube) after the given number
+       return (int) Math.pow(Math.pow(current, 1.0 / root) + 1, root);
     }
 
 }

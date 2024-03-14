@@ -40,7 +40,7 @@ public class Main {
 //	}
 
 	public static void ordering1(List<Integer> list) {
-		List<Integer> integers = list.stream().sorted(Comparator.comparing((Integer item) -> Math.abs(item)).thenComparing(i -> i)).toList();
+		List<Integer> integers = list.stream().sorted(Comparator.comparing((Integer item) -> Math.abs(item)).thenComparing(Comparator.naturalOrder())).toList();
 
 		System.out.println(integers);
 	}
