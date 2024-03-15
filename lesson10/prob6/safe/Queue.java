@@ -18,7 +18,7 @@ public class Queue {
 		tail = n;
 		tail.value = newValue;
 	}
-	public Object remove() {
+	synchronized public Object remove() {
 		if(head == null) return null;
 		Node n = head;
 		head = n.next;
