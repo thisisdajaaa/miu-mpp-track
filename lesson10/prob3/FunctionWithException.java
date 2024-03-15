@@ -5,12 +5,12 @@ import java.util.function.Function;
 @FunctionalInterface
 public interface FunctionWithException<T, R> {
 	R apply(T t) throws Exception;
-	
-	public static <T,R> Function<T,R> unchecked(FunctionWithException<T,R> f) {
-		return x -> {	
+
+	public static <T, R> Function<T, R> unchecked(FunctionWithException<T, R> function) {
+		return item -> {
 			try {
-				return f.apply(x);
-			} catch(Exception e) {
+				return function.apply(item);
+			} catch (Exception e) {
 				throw new RuntimeException(e);
 			}
 		};

@@ -63,10 +63,6 @@ public class BugReportGenerator {
                 .map(classTransformedBugReportFunction)
                 .collect(Collectors.groupingBy(TransformedBugReport::getAssignedTo));
 
-        System.out.println(bugReports);
-
-        System.out.println(Math.round(Math.pow(7.0, 1.0 / 4.0)));
-
         printToFile(bugReports);
     }
 

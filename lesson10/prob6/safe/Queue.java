@@ -1,4 +1,4 @@
-package lesson10.prob6;
+package lesson10.prob6.safe;
 
 //Show the methods are not threadsafe.
 //Then modify so that they are threadsafe.
@@ -7,9 +7,11 @@ public class Queue {
 		Object value;
 		Node next;
 	}
-	private Node head;
-	private Node tail;
-	public void add(Object newValue) {
+	private Node head = null;
+	private Node tail = null;
+
+	// synchronized keyword added
+	synchronized public void add(Object newValue) {
 		Node n = new Node();
 		if(head == null) head = n;
 		else tail.next = n;
@@ -22,4 +24,15 @@ public class Queue {
 		head = n.next;
 		return n.value;
 	}
+
+	synchronized public int size(){
+		int counter = 0;
+		Node headRun = head;
+		while (headRun != null){
+			counter++;
+			headRun = headRun.next;
+		}
+		return counter;
+	}
+
 }

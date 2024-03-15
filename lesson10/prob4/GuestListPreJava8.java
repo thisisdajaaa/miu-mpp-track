@@ -47,8 +47,8 @@ public class GuestListPreJava8 {
 		guests = guests.substring(1, guests.length()-1);
 		System.out.println(guests);
 	}
-	
-	
+
+
 	class IllegalGuestException extends Exception {
 		private static final long serialVersionUID = 1L;
 		IllegalGuestException() {

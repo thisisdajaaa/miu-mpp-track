@@ -1,7 +1,11 @@
 package lesson10.prob4;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import static lesson10.prob4.PredicateWithException.unchecked;
 
 public class GuestListJava8 {
 	 
@@ -30,6 +34,15 @@ public class GuestListJava8 {
 	
 	public void printListOfExpectedFemaleGuests(List<Guest> invited) {
 		//implement
+		String guests = invited.stream()
+				.filter(x -> unchecked(this::checkLegal).test(x))
+				.filter(x -> x.getGender().equals(Gender.F))
+				.filter(Guest::isPlanningToCome)
+				.map(Guest::getName)
+				.sorted()
+				.collect(Collectors.joining(","));
+
+		System.out.println(guests);
 	}
 	
 	
