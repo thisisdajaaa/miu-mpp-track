@@ -11,7 +11,8 @@ public class EmployeeStats {
         this.totalNumberOfEmployees = totalNumberOfEmployees;
     }
 
-    public EmployeeStats(){}
+    public EmployeeStats() {
+    }
 
     public Integer getTotalAge() {
         return totalAge;
@@ -46,13 +47,7 @@ public class EmployeeStats {
 
     @Override
     public String toString() {
-        return "EmployeeStats{" +
-                "totalAge=" + totalAge +
-                ", totalSalary=" + totalSalary +
-                ", totalNumberOfEmployees=" + totalNumberOfEmployees +
-                ", getAverageAge=" + getAverageAge() +
-                ", getAverageSalary=" + getAverageSalary() +
-                '}';
+        return STR."EmployeeStats{totalAge=\{totalAge}, totalSalary=\{totalSalary}, totalNumberOfEmployees=\{totalNumberOfEmployees}, getAverageAge=\{getAverageAge()}, getAverageSalary=\{getAverageSalary()}\{'}'}";
     }
 
     public double getAverageAge() {
