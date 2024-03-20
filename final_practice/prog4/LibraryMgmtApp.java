@@ -3,6 +3,7 @@ package final_practice.prog4;
 import final_practice.prog4.data.BookData;
 import final_practice.prog4.model.Book;
 
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -26,6 +27,8 @@ public class LibraryMgmtApp {
 
         System.out.println("List of Books3 Sorted:");
         sortBooksByPublisherAndTitle3(books3);
+
+        books3.forEach(System.out::println);
         // Print-out the sorted books3
 
     }
@@ -44,7 +47,7 @@ public class LibraryMgmtApp {
             }
         };
 
-        books.sort(sortedBooks);
+        Collections.sort(books, sortedBooks);
     }
 
     private static void sortBooksByPublisherAndTitle2(List<Book> books) {
@@ -65,6 +68,8 @@ public class LibraryMgmtApp {
         // c.	(5 points) Using Comparator.comparing(…).thenComparing(…).
         // TODO Implement your code here
 
-        books.stream().sorted(Comparator.comparing((Book x) -> x.getPublisher().getName()).thenComparing(Book::getTitle)).toList().forEach(System.out::println);
+        Comparator<Book> sorComparator = Comparator.comparing((Book x) -> x.getPublisher().getName()).thenComparing(Book::getTitle);
+
+        Collections.sort(books, sorComparator);
     }
 }

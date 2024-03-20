@@ -7,7 +7,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
-
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
@@ -87,7 +86,7 @@ public class BugReportGenerator {
                     writer.printf("\t %s %s \n", DESCRIPTION, report.getDescription());
                     writer.printf("\t %s %s \n", SEVERITY, report.getSeverity());
 
-                    if (reportIndex.getAndIncrement() < reports.size() - 1)  writer.println();
+                    if (reportIndex.getAndIncrement() < reports.size() - 1) writer.println();
                 });
 
                 writer.println();
